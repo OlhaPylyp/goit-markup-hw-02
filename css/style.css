@@ -73,13 +73,13 @@ ul {
   color: var(--white);
 }
 /*style for advantage section*/
-.section-adv h2 {
+.section-advantage h2 {
   color: var(--white);
 }
-.section-adv h3 {
+.section-advantage h3 {
   color: var(--title-color);
 }
-.section-adv p {
+.section-advantage p {
   color: var(---text-color);
 }
 /*style for command*/
@@ -110,14 +110,17 @@ ul {
 }
 
 /*style for portfolio*/
+/*title-portfolio*/
+.Portfolio {
+  color: var(--white);
+}
 /*style for button portfolio*/
-.button-portfolio {
+.button-portfolio button {
   background: var(--gray-bcg-color);
   color: var(--title-color);
 }
 .button-portfolio button:hover,
-button:focus,
-button:active {
+.button-portfolio button:focus {
   color: var(--white);
   background: var(--akcent-color);
   cursor: pointer;
@@ -128,7 +131,7 @@ button:active {
   background: var(--akcent-color);
 }
 /*portfolio service*/
-.section-service p {
+.link-service p {
   color: var(--text-color);
 }
 .service-title {
