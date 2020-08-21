@@ -6,17 +6,21 @@
   --link-color: rgba(255, 255, 255, 0.6);
   --shadow-color: 0px 4px 4px rgba(0, 0, 0, 0.25);
   --logo2-color: #000000;
-  --main-bcg-color:#ffffff;
-  --baner-bcg-color: #2F303A;
-  --gray-bcg-color: #F5F4FA;
-  }
+  --main-bcg-color: #ffffff;
+  --baner-bcg-color: #2f303a;
+  --gray-bcg-color: #f5f4fa;
+}
 
 body {
-  color: var(--title-color) 
+  color: var(--title-color);
   background-color: var(--main-bcg-color);
 }
+/*link*/
+a {
+  text-decoration: none;
+}
 /*header*/
-
+/*logo*/
 .logo {
   color: var(--logo2-color);
 }
@@ -29,47 +33,62 @@ ul {
 
 /*site-nav*/
 
-.site-nav {
-  color: var(title-color);
+.site-nav .link {
+  color: var(--title-color);
+  cursor: pointer;
 }
-
-.site-nav .link:hover,.site-nav .link:focus
- {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--akcent-color);
 }
+.site-nav .link-act:hover,
+.site-nav .link-act:focus,
+.site-nav .link-act:active {
+  color: var(--akcent-color);
+}
+/* adress*/
+.site-adr > li {
+  color: var(--text-color);
+  cursor: pointer;
+}
+/*link style*/
 
 /*main*/
 .main-section {
   color: var(--white);
   background: var(--baner-bcg-color);
 }
-.button{
-  background: var(--akcent-color)
+p {
+  color: var(--text-color);
+}
+.button {
+  background: var(--akcent-color);
 }
 .section-title {
   color: var(--title-color);
 }
+
 /*advantage list*/
 
 .advant-list .title {
-   color: var(--title-color)
+  color: var(--title-color);
 }
-.work-list .title{
-  color: var(--title-color)
+.work-list .title {
+  color: var(--title-color);
 }
 .command-section {
   background: var(--gray-bcg-color);
 }
-.comand-list .title{
-  color: var(--title-color)
+.comand-list .title {
+  color: var(--title-color);
 }
 /*footer*/
 .foter {
-  background:  var(--baner-bcg-color);
+  background: var(--baner-bcg-color);
 }
-.logo-foter {
+.foter p {
   color: var(--white);
-  }
-.fot-adrress .a{
+}
+.adres-footer {
   color: var(--link-color);
 }
