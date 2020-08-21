@@ -33,7 +33,7 @@ ul {
 
 /*site-nav*/
 
-.site-nav .link {
+.site-nav a {
   color: var(--title-color);
   cursor: pointer;
 }
@@ -46,24 +46,43 @@ ul {
 .site-nav .link-act:active {
   color: var(--akcent-color);
 }
-/* adress*/
-.site-adr > li {
+/* adress header*/
+/*link style*/
+.site-adr a {
   color: var(--text-color);
+}
+
+.site-adr .head-mail:hover,
+.site-adr .head-mail:focus,
+.site-adr .head-mail:active {
+  color: var(--akcent-color);
   cursor: pointer;
 }
-/*link style*/
-
+.site-adr .head-tel:hover,
+.site-adr .head-tel:focus {
+  color: var(--akcent-color);
+  cursor: pointer;
+}
 /*main*/
-.main-section {
+.poster-section {
+  /*poster style*/
   color: var(--white);
   background: var(--baner-bcg-color);
 }
+/*style paragraf*/
 p {
   color: var(--text-color);
 }
+/*button style*/
 .button {
   background: var(--akcent-color);
+  color: var(--white);
 }
+/*style for advantage section*/
+.section-adv h2 {
+  color: var(--white);
+}
+/*style for all h2 and h3*/
 .section-title {
   color: var(--title-color);
 }
@@ -85,6 +104,9 @@ p {
 /*footer*/
 .foter {
   background: var(--baner-bcg-color);
+}
+.logo-foter {
+  color: var(--white);
 }
 .foter p {
   color: var(--white);
