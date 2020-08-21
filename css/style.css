@@ -35,13 +35,14 @@ ul {
   color: var(--title-color);
   cursor: pointer;
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+
+.site-nav .link-act {
   color: var(--akcent-color);
 }
-.site-nav .link-act:hover,
-.site-nav .link-act:focus,
-.site-nav .link-act:active {
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link:active {
   color: var(--akcent-color);
 }
 /* adress header*/
@@ -49,27 +50,22 @@ ul {
 .site-adr a {
   color: var(--text-color);
 }
+.site-adr .head-mail {
+  color: var(--akcent-color);
+}
 
-.site-adr .head-mail:hover,
-.site-adr .head-mail:focus,
-.site-adr .head-mail:active {
+.site-adr a:hover,
+.site-adr a:focus,
+.site-adr a:active {
   color: var(--akcent-color);
   cursor: pointer;
 }
-.site-adr .head-tel:hover,
-.site-adr .head-tel:focus {
-  color: var(--akcent-color);
-  cursor: pointer;
-}
+
 /*main*/
 .poster-section {
   /*poster style*/
   color: var(--white);
   background: var(--baner-bcg-color);
-}
-/*style paragraf*/
-p {
-  color: var(--text-color);
 }
 /*button style*/
 .button {
@@ -80,28 +76,25 @@ p {
 .section-adv h2 {
   color: var(--white);
 }
-/*style for all h2 */
-.section-title {
+.section-adv h3 {
   color: var(--title-color);
 }
-/*style for all h3*/
-.title {
-  color: var(--title-color);
+.section-adv p {
+  color: var(---text-color);
 }
-
-/*advantage list*/
-
-.advant-list .title {
-  color: var(--title-color);
-}
-
+/*style for command*/
 .command-section {
   background: var(--gray-bcg-color);
+}
+.command-section h3 {
+  color: var(--title-color);
 }
 .decor {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
+.command-section p {
+  color: var(---text-color);
+}
 /*footer*/
 .foter {
   background: var(--baner-bcg-color);
@@ -114,4 +107,22 @@ p {
 }
 .adres-footer {
   color: var(--link-color);
+}
+
+/*style for portfolio*/
+/*style for button portfolio*/
+.button-portfolio {
+  background: var(--gray-bcg-color);
+  color: var(--title-color);
+}
+.button-portfolio button:hover,
+button:focus,
+button:active {
+  color: var(--white);
+  background: var(--akcent-color);
+}
+.button-portfolio-active {
+  color: var(--white);
+  background: var(--akcent-color);
+  cursor: pointer;
 }
