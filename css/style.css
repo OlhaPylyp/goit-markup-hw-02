@@ -1,34 +1,76 @@
-/*main color #212121;*/
-/*second color #757575;*/
-/*white FFFFFF*/
-/*akcent 2196F3*/
-/*linkcolor rgba(255, 255, 255, 0.6);*/
-/*shadow 0px 4px 4px rgba(0, 0, 0, 0.25);*/
-/*logo*  #000000;*/
+:root {
+  --title-color: #212121;
+  --text-color: #757575;
+  --white: #ffffff;
+  --akcent-color: #2196f3;
+  --link-color: rgba(255, 255, 255, 0.6);
+  --shadow-color: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --logo2-color: #000000;
+  --main-bcg-color:#ffffff;
+  --baner-bcg-color: #2F303A;
+  --gray-bcg-color: #F5F4FA;
+  }
+
 body {
-  color: #212121;
-  background-color: #ffffff;
+  color: var(--title-color) 
+  background-color: var(--main-bcg-color);
 }
+/*header*/
+
 .logo {
-  color: #000000;
+  color: var(--logo2-color);
 }
 .logo-main {
-  color: #2196f3;
+  color: var(--akcent-color);
 }
 ul {
   list-style: none;
 }
 
 /*site-nav*/
-.site-nav .link {
-  color: #212121;
+
+.site-nav {
+  color: var(title-color);
 }
-.site-nav .nav-link {
-  color: #212121;
-  cursor: pointer;
+
+.site-nav .link:hover,.site-nav .link:focus
+ {
+  color: var(--akcent-color);
 }
-.site-nav .nav-link:hover,
-.site-nav .nav-link:focus,
-.site-nav .nav-link:active {
-  color: #2196f3;
+
+/*main*/
+.main-section {
+  color: var(--white);
+  background: var(--baner-bcg-color);
 }
+.button{
+  background: var(--akcent-color)
+}
+.section-title {
+  color: var(--title-color);
+}
+/*advantage list*/
+
+.advant-list .title {
+   color: var(--title-color)
+}
+.work-list .title{
+  color: var(--title-color)
+}
+.command-section {
+  background: var(--gray-bcg-color);
+}
+.comand-list .title{
+  color: var(--title-color)
+}
+/*footer*/
+.foter {
+  background:  var(--baner-bcg-color);
+}
+.logo-foter {
+  color: var(--white);
+  }
+.fot-adrress .a{
+  color: var(--link-color);
+}
+
