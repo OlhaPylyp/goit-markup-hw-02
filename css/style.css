@@ -13,27 +13,44 @@
 body {
   color: var(--title-color);
   background-color: var(--main-bcg-color);
+
+  font-family: Roboto, sans-serif;
+  font-style: 400;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 /*link*/
 a {
   text-decoration: none;
 }
-/*header*/
-/*logo*/
-.logo {
-  color: var(--logo2-color);
-}
-.logo-main {
-  color: var(--akcent-color);
-}
+/*delete point in list*/
 ul {
   list-style: none;
 }
 
+/*header*/
+/*logo*/
+.logo {
+  color: var(--logo2-color);
+
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.logo-web {
+  color: var(--akcent-color);
+
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+}
 /*site-nav*/
 .site-nav a {
-  color: var(--title-color);
   cursor: pointer;
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link-act {
@@ -49,6 +66,9 @@ ul {
 /*link style*/
 .site-adr a {
   color: var(--text-color);
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 .site-adr .head-mail {
   color: var(--akcent-color);
@@ -62,51 +82,96 @@ ul {
 }
 
 /*main*/
+/*style fo rposter section*/
 .poster-section {
   /*poster style*/
   color: var(--white);
   background: var(--baner-bcg-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  text-align: center;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
-/*button style*/
+/*button style poster section*/
 .button {
   background: var(--akcent-color);
   color: var(--white);
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.9;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
+
 /*style for advantage section*/
-.section-advantage h2 {
+.advantage-title {
   color: var(--white);
 }
 .section-advantage h3 {
-  color: var(--title-color);
+  line-height: 1.15;
+  text-transform: uppercase;
 }
 .section-advantage p {
   color: var(---text-color);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/*style for title*/
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 /*style for command*/
 .command-section {
   background: var(--gray-bcg-color);
 }
 .command-section h3 {
-  color: var(--title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
 .decor {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .command-section p {
   color: var(---text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
 /*footer*/
 .foter {
   background: var(--baner-bcg-color);
+
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
+
 .logo-foter {
   color: var(--white);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
 }
 .foter p {
   color: var(--white);
+  font-style: 400;
 }
 .adres-footer {
   color: var(--link-color);
+  font-style: 400;
 }
 
 /*style for portfolio*/
@@ -116,6 +181,7 @@ ul {
 }
 /*style for button portfolio*/
 .button-portfolio button {
+  font-family: inherit;
   background: var(--gray-bcg-color);
   color: var(--title-color);
 }
