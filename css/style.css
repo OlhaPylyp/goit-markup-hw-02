@@ -120,9 +120,17 @@ button:focus,
 button:active {
   color: var(--white);
   background: var(--akcent-color);
+  cursor: pointer;
 }
+
 .button-portfolio-active {
   color: var(--white);
   background: var(--akcent-color);
-  cursor: pointer;
+}
+/*portfolio service*/
+.section-service p {
+  color: var(--text-color);
+}
+.service-title {
+  color: var(--white);
 }
