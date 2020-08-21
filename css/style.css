@@ -4,7 +4,6 @@
   --white: #ffffff;
   --akcent-color: #2196f3;
   --link-color: rgba(255, 255, 255, 0.6);
-  --shadow-color: 0px 4px 4px rgba(0, 0, 0, 0.25);
   --logo2-color: #000000;
   --main-bcg-color: #ffffff;
   --baner-bcg-color: #2f303a;
@@ -32,7 +31,6 @@ ul {
 }
 
 /*site-nav*/
-
 .site-nav a {
   color: var(--title-color);
   cursor: pointer;
@@ -82,8 +80,12 @@ p {
 .section-adv h2 {
   color: var(--white);
 }
-/*style for all h2 and h3*/
+/*style for all h2 */
 .section-title {
+  color: var(--title-color);
+}
+/*style for all h3*/
+.title {
   color: var(--title-color);
 }
 
@@ -92,15 +94,14 @@ p {
 .advant-list .title {
   color: var(--title-color);
 }
-.work-list .title {
-  color: var(--title-color);
-}
+
 .command-section {
   background: var(--gray-bcg-color);
 }
-.comand-list .title {
-  color: var(--title-color);
+.decor {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 /*footer*/
 .foter {
   background: var(--baner-bcg-color);
