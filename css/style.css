@@ -15,7 +15,7 @@ body {
   background-color: var(--main-bcg-color);
 
   font-family: Roboto, sans-serif;
-  font-style: 400;
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -31,6 +31,11 @@ ul {
 
 /*header*/
 /*logo*/
+.logo-web {
+  color: var(--akcent-color);
+
+  font-family: Raleway, sans-serif;
+}
 .logo {
   color: var(--logo2-color);
 
@@ -38,18 +43,14 @@ ul {
   font-size: 26px;
   line-height: 1.2;
 }
-.logo-web {
-  color: var(--akcent-color);
 
-  font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.2;
-}
 /*site-nav*/
 .site-nav a {
+  color: var(--title-color);
   cursor: pointer;
 
   font-weight: 500;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -57,9 +58,9 @@ ul {
   color: var(--akcent-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus,
-.site-nav .link:active {
+.site-nav a:hover,
+.site-nav a:focus,
+.site-nav a:active {
   color: var(--akcent-color);
 }
 /* adress header*/
@@ -68,6 +69,7 @@ ul {
   color: var(--text-color);
 
   font-weight: 500;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .site-adr .head-mail {
@@ -152,26 +154,23 @@ ul {
 /*footer*/
 .foter {
   background: var(--baner-bcg-color);
-
-  font-family: Roboto, sans-serif;
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-
 .logo-foter {
   color: var(--white);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
 }
-.foter p {
+.adress p {
   color: var(--white);
-  font-style: 400;
+  font-style: normal;
 }
-.adres-footer {
+.adress a {
   color: var(--link-color);
-  font-style: 400;
+  font-style: normal;
 }
 
 /*style for portfolio*/
@@ -180,26 +179,40 @@ ul {
   color: var(--white);
 }
 /*style for button portfolio*/
-.button-portfolio button {
-  font-family: inherit;
-  background: var(--gray-bcg-color);
+.button-portfolio {
   color: var(--title-color);
+  background: var(--gray-bcg-color);
+
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
 }
+
 .button-portfolio button:hover,
-.button-portfolio button:focus {
+button:focus,
+button:active {
   color: var(--white);
   background: var(--akcent-color);
   cursor: pointer;
+
+  font-family: Roboto, sans-serif;
 }
 
-.button-portfolio-active {
-  color: var(--white);
-  background: var(--akcent-color);
-}
 /*portfolio service*/
-.link-service p {
-  color: var(--text-color);
-}
 .service-title {
   color: var(--white);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.link-service p {
+  color: var(--text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
 }
