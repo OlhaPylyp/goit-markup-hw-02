@@ -5,28 +5,19 @@
   --akcent-color: #2196f3;
   --link-color: rgba(255, 255, 255, 0.6);
   --logo2-color: #000000;
-  --main-bcg-color: #ffffff;
   --baner-bcg-color: #2f303a;
   --gray-bcg-color: #f5f4fa;
 }
 
 body {
   color: var(--title-color);
-  background-color: var(--main-bcg-color);
+  background-color: var(--white);
 
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
-}
-/*link*/
-a {
-  text-decoration: none;
-}
-/*delete point in list*/
-ul {
-  list-style: none;
 }
 
 /*header*/
@@ -38,6 +29,7 @@ ul {
 }
 .logo {
   color: var(--logo2-color);
+  text-decoration: none;
 
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -45,10 +37,14 @@ ul {
 }
 
 /*site-nav*/
-.site-nav a {
-  color: var(--title-color);
-  cursor: pointer;
+.list {
+  list-style: none;
+}
 
+.site-nav .link {
+  color: var(--title-color);
+  text-decoration: none;
+  cursor: pointer;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -56,6 +52,7 @@ ul {
 
 .site-nav .link-act {
   color: var(--akcent-color);
+  text-decoration: none;
 }
 
 .site-nav a:hover,
@@ -65,15 +62,16 @@ ul {
 }
 /* adress header*/
 /*link style*/
+.site-adr {
+  list-style: none;
+}
 .site-adr a {
   color: var(--text-color);
+  text-decoration: none;
 
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-.site-adr .head-mail {
-  color: var(--akcent-color);
 }
 
 .site-adr a:hover,
@@ -112,13 +110,12 @@ ul {
 }
 
 /*style for advantage section*/
-.advantage-title {
-  color: var(--white);
-}
-.section-advantage h3 {
+.list-advantage .title {
   line-height: 1.15;
   text-transform: uppercase;
+  list-style: none;
 }
+
 .section-advantage p {
   color: var(---text-color);
   font-weight: 400;
@@ -131,11 +128,14 @@ ul {
   line-height: 1.17;
   text-align: center;
 }
+/*style for чем мы занимаемся*/
+
 /*style for command*/
 .command-section {
   background: var(--gray-bcg-color);
 }
-.command-section h3 {
+
+.command-section .title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -160,6 +160,8 @@ ul {
 }
 .logo-foter {
   color: var(--white);
+  text-decoration: none;
+
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
@@ -170,20 +172,23 @@ ul {
 }
 .adress a {
   color: var(--link-color);
+  text-decoration: none;
   font-style: normal;
+}
+.adress a:hover,
+.adress a:focus {
+  color: var(--akcent-color);
+  cursor: pointer;
 }
 
 /*style for portfolio*/
-/*title-portfolio*/
-.Portfolio {
-  color: var(--white);
-}
+/*title portfolio*/
+
 /*style for button portfolio*/
 .button-portfolio {
   color: var(--title-color);
   background: var(--gray-bcg-color);
 
-  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -192,24 +197,27 @@ ul {
   border: none;
 }
 
-.button-portfolio button:hover,
-button:focus,
-button:active {
+.button-portfolio:hover,
+.button-portfolio:focus,
+.button-portfolio:active {
   color: var(--white);
   background: var(--akcent-color);
   cursor: pointer;
-
-  font-family: Roboto, sans-serif;
 }
 
 /*portfolio service*/
-.service-title {
-  color: var(--white);
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+.list-service a {
+  text-decoration: none;
 }
-.link-service p {
+
+.list-service h2 {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.15;
+}
+.list-service p {
   color: var(--text-color);
 
   font-weight: 400;
